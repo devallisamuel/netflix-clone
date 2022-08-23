@@ -1,11 +1,32 @@
 <main>
   <header>
-    <div aria-label="navbar" class="banner">
+    <div aria-label="navbar" class="bg-slate-400" role="banner">
       <nav id = "navbar">
         <img src="assets/netflix-icon-logo.svg" alt="company logo" style="width: 5rem; height:3rem; vertical-align: bottom;">
         <button class="sign-in-button">Sign In</button>
       </nav>
+      <div  class="space-y-6"> 
+        <div class="mt-50">
+          <h1 class="-m-4 text-white text-center text-3xl mx-auto  font-medium md:text-4xl md:font-bold">Unlimited movies TV</h1>
+          <h1 class="text-white text-center text-3xl mx-auto font-medium md:text-4xl md:font-bold">shows, and more.</h1>
+          <h4 class="text-white text-center text-lg mx-auto space-y-6 font-normal md:text-2xl">Watch anywhere. Cancel anytime.</h4>
+          <h4 class="text-white text-center text-xl mx-auto space-y-4 font-normal">
+            Ready to watch? Enter your email to create or restart your membership.
+          </h4>
+        </div>
+
+        <form #bannerForm = "ngForm" (ngSubmit)="onSubmit(bannerForm.value)" class="w-[100%] flex flex-col justify-around space-y-4 items-center md:flex-row md:justify-center md:space-y-0">
+          <input type="email" name = "email" placeholder="Email Address" class="w-[20rem] h-[3rem] px-8 focus:outline-none placeholder:p-2 mb-4" ngModel>
+          <button type="submit" role="button" aria-label="Get Started" 
+            class="text-white text-lg bg-red-500 rounded-sm border-0 w-[10rem] h-[3rem] focus:outline-none mb-4">
+            Get Started
+          </button>
+        </form>
+      </div>
     </div>
   </header>
+  <h4 class="block mr-10 text-black">
+    hi
+  </h4>
   <footer></footer>
 </main>

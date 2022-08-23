@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'netflix-clone';
+
+  onSubmit(params:{[key:string]:any}) :void {
+    console.log(params);
+  }
+  
 }

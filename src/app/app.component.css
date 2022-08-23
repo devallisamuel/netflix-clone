@@ -10,7 +10,8 @@
 }
 
 .banner {
-    background-image: url("/assets/Netflix-logo.jpg");
+    /* background-image: url("/assets/Netflix-logo.jpg"); */
+    background-color: black;
     background-repeat: no-repeat;
     /* background-position: center-top; */
     background-origin: padding-box;
